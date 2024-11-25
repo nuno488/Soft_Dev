@@ -9,12 +9,10 @@ public class Main {
         System.out.println("Insira o ano: ");
         int ano = in.nextInt();
 
-        if(ano%4 == 0 && ano%100 !=0){
-            System.out.println("bissexto");
-        }else if(ano%4 == 0 && ano%100 == 0 && ano%400 != 0){
-            System.out.println("não é bissexto");
-        }else if(ano%4 == 0 && ano%100 ==0 && ano%400 == 0){
-            System.out.println("bissexto");
+        if((ano%400 == 0) || (ano%4 == 0 && ano%100 !=0)) {
+            System.out.println("O ano " + ano +" é bissexto");
+        }else{
+            System.out.println("O ano " + ano +" não é bissexto");
         }
 
     }
