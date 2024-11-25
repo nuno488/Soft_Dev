@@ -1,0 +1,35 @@
+body{
+    background-color: lightgrey;
+    padding: 20px;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+#alinhaEsquerda{
+    text-align: left;
+}
+
+#alinhaDireita{
+    text-align: right;
+}
+
+h1, h2, h3, p{
+    text-align: center;
+}
+
+.margin{
+    background-color: blue;
+    border: 2px solid red;
+    color: white;
+    margin: 20px;
+}
+
+.padding{
+    background-color: blue;
+    border: 2px solid red;
+    color: white;
+    padding: 20px;
+}
