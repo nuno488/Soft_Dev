@@ -18,7 +18,7 @@ public class Main {
         nome = in .nextLine();
         System.out.println("Bem vindo " + nome);
         //Menu
-        int op;
+        int op = -1;
         do{
             System.out.println("---JOGOS DE SORTE OU AZAR---");
             System.out.println("Selecione uma opção:");
@@ -27,7 +27,16 @@ public class Main {
             System.out.println("3-Ver Saldo");
             System.out.println("4-Levantar dinheiro.");
             System.out.println("0-Sair");
-            op=in.nextInt();
+
+            // Validação para o caso de não ser um nr. EX.
+            try {
+                op = in.nextInt();
+            }catch (Exception e){
+                System.out.println("Valor inválido");
+                // quando ele lê uma String no nextInt() temos de
+                // voltar a criar um novo objeto Scanner (in)
+                in = new Scanner(System.in);
+            }
 
             if(op == 0){
                 break;
