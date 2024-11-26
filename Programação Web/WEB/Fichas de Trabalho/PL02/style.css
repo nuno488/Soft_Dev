@@ -1,0 +1,36 @@
+* {
+    background-color: bisque;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header img {
+    width: 50%;
+}
+
+nav, footer {
+    background-color: grey;
+    padding: 5px;
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+p {
+    text-align: justify;
+}
+

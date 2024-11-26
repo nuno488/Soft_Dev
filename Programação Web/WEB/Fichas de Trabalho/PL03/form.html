@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submeter" method="POST">
+        <fieldset>
+            <legend>Formulário de contacto do CESAE</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required placeholder="Insira o seu nome aqui">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+
+            <p>Género:</p>
+            <input type="radio" id="masculino" value="masculino" name="genero">
+            <label for="masculino">Masculino</label>
+            <br>
+            <input type="radio" id="feminino" value="feminino" name="genero">
+            <label for="feminino">Feminino</label>
+            <br><br>
+            <label for="data">Data atual:</label>
+            <input type="date" id="data" value="data_atual">
+            <br><br>
+            <label for="turma">Turma:</label>
+            <select name="turma" id="turma">
+                <option value="op1">Web Developer & Mobile</option>
+            </select>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
